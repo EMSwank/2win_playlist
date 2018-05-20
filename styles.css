@@ -1,0 +1,49 @@
+body {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  text-justify: left;
+  width: 100%;
+  max-width: auto;
+  display: grid;
+  grid-template-rows: repeat(4, 1fr);
+    grid:
+        "admin-login"
+        "nav"
+        "title"
+        "recipeints";
+    position: relative;
+    margin: auto;
+}
+
+.admin-login {
+  grid-area: admin-login;
+  background-color: black;
+  text-align: right;
+  height: 40px;
+}
+
+.logo {
+  text-align: right;
+}
+.nav {
+  grid-area: nav;
+  display: flex;
+  flex-direction: row;
+  background-color: black;
+  color: white;
+}
+
+a {
+  color: blue;
+}
+
+.title {
+  grid-area: title;
+  font-style: bold;
+}
+
+.recipeints {
+  grid-area: recipeints;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
